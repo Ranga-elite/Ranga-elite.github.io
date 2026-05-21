@@ -4,32 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ranganayi Nyamadzawo — Solutions Architect & DevOps Engineer</title>
+<meta name="description" content="Ranganayi Nyamadzawo — Solutions Architect & DevOps Engineer in training. Building cloud infrastructure, AI systems, and DevOps pipelines from Harare, Zimbabwe.">
+<meta property="og:title" content="Ranganayi Nyamadzawo — Solutions Architect & DevOps Engineer">
+<meta property="og:description" content="Building at the intersection of cloud infrastructure, DevOps, and AI. Based in Harare, Zimbabwe.">
+<meta property="og:image" content="https://ranga-elite.github.io/20260329_225105.png">
+<meta property="og:url" content="https://ranga-elite.github.io">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='8' fill='%230A192F'/><text y='72' x='12' font-size='68' font-family='monospace' fill='%2300B4FF'>R</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --navy:#0A192F;
-  --navy-mid:#112240;
-  --navy-light:#1D3557;
-  --accent:#00B4FF;
-  --accent-dim:rgba(0,180,255,0.12);
-  --white:#CCD6F6;
-  --white-bright:#E8EEF4;
-  --muted:#8892A4;
-  --border:rgba(0,180,255,0.12);
-  --font:'DM Sans',sans-serif;
-  --mono:'DM Mono',monospace;
+  --navy:#0A192F;--navy-mid:#112240;--accent:#00B4FF;--accent-dim:rgba(0,180,255,0.1);
+  --white:#CCD6F6;--white-bright:#E8EEF4;--muted:#8892A4;--border:rgba(0,180,255,0.12);
+  --green:#00FF88;--font:'DM Sans',sans-serif;--mono:'DM Mono',monospace;
 }
 html{scroll-behavior:smooth}
 body{background:var(--navy);color:var(--white);font-family:var(--font);font-weight:300;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:18px 60px;background:rgba(10,25,47,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+ 
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:18px 60px;background:rgba(10,25,47,0.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
 .nav-logo{font-family:var(--mono);font-size:15px;color:var(--accent);letter-spacing:2px;text-decoration:none;font-weight:500}
-.nav-links{display:flex;gap:32px;list-style:none}
-.nav-links a{font-size:12px;font-weight:400;color:var(--muted);text-decoration:none;letter-spacing:2px;text-transform:uppercase;transition:color 0.2s}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:12px;color:var(--muted);text-decoration:none;letter-spacing:2px;text-transform:uppercase;transition:color 0.2s}
 .nav-links a:hover{color:var(--accent)}
-.nav-cta{padding:8px 20px;border:1px solid var(--accent);color:var(--accent) !important;border-radius:2px}
-.nav-cta:hover{background:var(--accent-dim) !important}
+.nav-cta{padding:8px 20px;border:1px solid var(--accent);color:var(--accent)!important;border-radius:2px;transition:background 0.2s!important}
+.nav-cta:hover{background:var(--accent-dim)!important}
+ 
+/* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;padding:120px 60px 80px;position:relative;overflow:hidden}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,180,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,180,255,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
 .hero-glow{position:absolute;top:-100px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(0,180,255,0.06) 0%,transparent 65%);pointer-events:none}
@@ -38,83 +42,121 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .hero-tag::before{content:'';display:inline-block;width:40px;height:1px;background:var(--accent)}
 .hero-name{font-size:clamp(44px,6vw,80px);font-weight:500;line-height:1.05;letter-spacing:-1.5px;color:var(--white-bright);margin-bottom:6px}
 .hero-name span{color:var(--accent)}
-.hero-title{font-size:clamp(18px,2.5vw,24px);font-weight:300;color:var(--muted);margin-bottom:24px}
+.hero-title{font-size:clamp(16px,2.2vw,22px);font-weight:300;color:var(--muted);margin-bottom:24px}
 .hero-desc{font-size:16px;color:var(--muted);max-width:540px;line-height:1.9;margin-bottom:48px}
 .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
-.btn-primary{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border:1px solid var(--accent);color:var(--accent);font-family:var(--mono);font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all 0.2s;border-radius:2px}
-.btn-primary:hover{background:var(--accent-dim);transform:translateY(-2px)}
-.btn-secondary{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border:1px solid rgba(136,146,164,0.3);color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all 0.2s;border-radius:2px}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:var(--accent);color:var(--navy);font-family:var(--mono);font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all 0.2s;border-radius:2px;font-weight:500}
+.btn-primary:hover{opacity:0.9;transform:translateY(-2px)}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;border:1px solid rgba(136,146,164,0.3);color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all 0.2s;border-radius:2px}
 .btn-secondary:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
 .scroll-hint{position:absolute;bottom:40px;left:60px;display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
 .scroll-line{width:40px;height:1px;background:var(--muted)}
+ 
+/* SECTIONS */
 section{padding:100px 60px;max-width:1100px;margin:0 auto}
 .section-label{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:4px;text-transform:uppercase;margin-bottom:12px}
 .section-title{font-size:clamp(26px,3.5vw,40px);font-weight:500;color:var(--white-bright);letter-spacing:-0.5px;margin-bottom:56px;display:flex;align-items:center;gap:20px}
 .section-title::after{content:'';flex:1;height:1px;background:var(--border);max-width:320px}
-.about-grid{display:grid;grid-template-columns:3fr 2fr;gap:60px;align-items:start}
+ 
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 280px;gap:60px;align-items:start}
 .about-text p{font-size:16px;color:var(--muted);line-height:1.9;margin-bottom:20px}
 .about-text p span{color:var(--accent)}
+.about-right{display:flex;flex-direction:column;gap:20px}
+.profile-photo{width:100%;aspect-ratio:1;border-radius:4px;overflow:hidden;border:2px solid var(--border);position:relative}
+.profile-photo img{width:100%;height:100%;object-fit:cover;object-position:top center;filter:grayscale(20%);transition:filter 0.3s}
+.profile-photo:hover img{filter:grayscale(0%)}
+.profile-photo::after{content:'';position:absolute;inset:0;border:2px solid var(--accent);opacity:0;border-radius:4px;transition:opacity 0.3s}
+.profile-photo:hover::after{opacity:0.3}
 .about-stats{display:flex;flex-direction:column;gap:1px;background:var(--border);border:1px solid var(--border)}
-.stat-card{background:var(--navy);padding:20px 24px;position:relative;transition:background 0.2s}
+.stat-card{background:var(--navy);padding:16px 20px;position:relative;transition:background 0.2s}
 .stat-card:hover{background:var(--navy-mid)}
 .stat-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--accent)}
-.stat-label{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px}
-.stat-value{font-size:14px;color:var(--white-bright);font-weight:400}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--border);border:1px solid var(--border)}
-.skill-item{background:var(--navy);padding:28px 22px;transition:background 0.2s}
+.stat-label{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
+.stat-value{font-size:13px;color:var(--white-bright);font-weight:400}
+ 
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:1px;background:var(--border);border:1px solid var(--border)}
+.skill-item{background:var(--navy);padding:26px 20px;transition:background 0.2s}
 .skill-item:hover{background:var(--navy-mid)}
-.skill-icon{font-size:24px;margin-bottom:14px}
-.skill-name{font-size:14px;font-weight:500;color:var(--white-bright);margin-bottom:5px}
-.skill-level{font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}
-.skill-bar-track{height:2px;background:rgba(0,180,255,0.12);margin-top:14px}
+.skill-icon{margin-bottom:14px;display:flex;align-items:center}
+.skill-icon svg{width:28px;height:28px}
+.skill-name{font-size:14px;font-weight:500;color:var(--white-bright);margin-bottom:4px}
+.skill-context{font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.4}
+.skill-bar-track{height:2px;background:rgba(0,180,255,0.12);margin-top:10px}
 .skill-bar-fill{height:100%;background:linear-gradient(90deg,var(--accent),rgba(0,180,255,0.4))}
+ 
+/* PROJECTS */
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
-.project-card{background:var(--navy-mid);padding:32px 28px;border:1px solid var(--border);transition:all 0.2s;position:relative;overflow:hidden;border-radius:2px}
-.project-card:hover{border-color:rgba(0,180,255,0.3);transform:translateY(-4px)}
+.project-card{background:var(--navy-mid);padding:32px 28px;border:1px solid var(--border);transition:all 0.25s;position:relative;overflow:hidden;border-radius:2px;display:flex;flex-direction:column}
+.project-card:hover{border-color:rgba(0,180,255,0.35);transform:translateY(-4px)}
 .project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
-.project-status{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;border-radius:2px;display:inline-block;margin-bottom:16px}
+.project-status{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;border-radius:2px;display:inline-block;margin-bottom:16px;width:fit-content}
 .status-active{background:rgba(0,180,255,0.1);color:var(--accent);border:1px solid rgba(0,180,255,0.3)}
 .status-planned{background:rgba(136,146,164,0.1);color:var(--muted);border:1px solid rgba(136,146,164,0.2)}
+.status-shipped{background:rgba(0,255,136,0.08);color:var(--green);border:1px solid rgba(0,255,136,0.2)}
 .project-name{font-size:18px;font-weight:500;color:var(--white-bright);margin-bottom:10px}
-.project-desc{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:20px}
+.project-desc{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:20px;flex:1}
+.project-footer{display:flex;flex-direction:column;gap:12px}
 .project-stack{display:flex;flex-wrap:wrap;gap:8px}
 .stack-tag{font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:1px;padding:3px 8px;border:1px solid var(--accent-dim);border-radius:2px}
-.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.cert-card{background:var(--navy-mid);border:1px solid var(--border);padding:24px;border-radius:2px;display:flex;align-items:flex-start;gap:16px;transition:all 0.2s;position:relative}
-.cert-card:hover{border-color:rgba(0,180,255,0.3);transform:translateY(-2px)}
-.cert-card.locked{opacity:0.55}
-.cert-card.locked:hover{transform:none}
-.cert-icon{font-size:28px;min-width:36px}
-.cert-name{font-size:14px;font-weight:500;color:var(--white-bright);margin-bottom:4px;line-height:1.4}
-.cert-issuer{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
-.cert-badge{position:absolute;top:12px;right:12px;font-family:var(--mono);font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:2px}
-.badge-target{background:rgba(136,146,164,0.1);color:var(--muted);border:1px solid rgba(136,146,164,0.2)}
+.project-link{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--accent);text-decoration:none;letter-spacing:1px;text-transform:uppercase;transition:opacity 0.2s}
+.project-link:hover{opacity:0.7}
+ 
+/* CERTIFICATIONS */
+.cert-earned{background:var(--navy-mid);border:1px solid rgba(0,255,136,0.25);padding:28px;border-radius:2px;display:flex;align-items:flex-start;gap:20px;margin-bottom:24px;position:relative;overflow:hidden}
+.cert-earned::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--green)}
+.cert-earned-icon{font-size:36px;min-width:40px}
+.cert-earned-info{flex:1}
+.cert-earned-name{font-size:18px;font-weight:500;color:var(--white-bright);margin-bottom:4px}
+.cert-earned-issuer{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.cert-earned-date{font-family:var(--mono);font-size:11px;color:var(--green);letter-spacing:1px}
+.cert-verify{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--green);text-decoration:none;letter-spacing:1px;text-transform:uppercase;margin-top:12px;transition:opacity 0.2s}
+.cert-verify:hover{opacity:0.7}
+.cert-badge-earned{position:absolute;top:16px;right:16px;font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:rgba(0,255,136,0.1);color:var(--green);border:1px solid rgba(0,255,136,0.3)}
+.cert-studying{font-family:var(--mono);font-size:13px;color:var(--muted);letter-spacing:1px;padding:16px 20px;border:1px solid var(--border);border-radius:2px;display:flex;align-items:center;gap:10px}
+.cert-studying::before{content:'→';color:var(--accent)}
+ 
+/* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
 .contact-intro{font-size:16px;color:var(--muted);line-height:1.9}
 .contact-intro span{color:var(--accent)}
 .contact-links{display:flex;flex-direction:column;gap:12px}
-.contact-link{display:flex;align-items:center;gap:16px;padding:18px 20px;border:1px solid var(--border);text-decoration:none;color:var(--white);font-size:14px;transition:all 0.2s;position:relative;overflow:hidden;border-radius:2px}
+.contact-link{display:flex;align-items:center;gap:16px;padding:16px 20px;border:1px solid var(--border);text-decoration:none;color:var(--white);font-size:14px;transition:all 0.2s;position:relative;overflow:hidden;border-radius:2px}
 .contact-link::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:rgba(0,180,255,0.05);transition:width 0.3s}
 .contact-link:hover::before{width:100%}
 .contact-link:hover{border-color:rgba(0,180,255,0.4)}
-.contact-link-icon{font-size:20px;color:var(--accent);min-width:24px}
+.contact-link-icon{color:var(--accent);min-width:22px;display:flex;align-items:center}
 .contact-link-label{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;display:block}
-.contact-link-value{font-size:14px;color:var(--white-bright)}
-.contact-link-arrow{margin-left:auto;color:var(--muted);transition:transform 0.2s,color 0.2s}
+.contact-link-value{font-size:13px;color:var(--white-bright)}
+.contact-link-arrow{margin-left:auto;color:var(--muted);transition:transform 0.2s,color 0.2s;font-size:14px}
 .contact-link:hover .contact-link-arrow{transform:translateX(4px);color:var(--accent)}
+ 
+/* FOOTER */
 footer{border-top:1px solid var(--border);padding:28px 60px;display:flex;justify-content:space-between;align-items:center}
 footer p{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px}
 footer span{color:var(--accent)}
+ 
+/* ANIMATIONS */
 .fade-in{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease}
 .fade-in.visible{opacity:1;transform:translateY(0)}
+ 
+/* RESPONSIVE */
 @media(max-width:900px){
   nav{padding:16px 24px}
   .nav-links{gap:16px}
   .hero{padding:100px 24px 60px}
   section{padding:70px 24px}
-  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
+  .about-right{flex-direction:row;gap:16px}
+  .profile-photo{width:140px;flex-shrink:0}
+  .contact-grid{grid-template-columns:1fr}
   footer{padding:24px;flex-direction:column;gap:8px;text-align:center}
   .scroll-hint{display:none}
+}
+@media(max-width:600px){
+  .about-right{flex-direction:column}
+  .profile-photo{width:100%}
 }
 </style>
 </head>
@@ -131,22 +173,24 @@ footer span{color:var(--accent)}
   </ul>
 </nav>
  
+<!-- HERO -->
 <div class="hero" id="hero">
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
   <div class="hero-content">
-    <div class="hero-tag">Available for opportunities</div>
+    <div class="hero-tag">Open to opportunities</div>
     <h1 class="hero-name">Ranganayi<br><span>Nyamadzawo.</span></h1>
-    <p class="hero-title">Aspiring Solutions Architect & DevOps Engineer</p>
+    <p class="hero-title">Solutions Architect & DevOps Engineer in Training</p>
     <p class="hero-desc">Building at the intersection of cloud infrastructure, DevOps, and artificial intelligence. Based in Harare, Zimbabwe — working toward architecting systems that scale across Africa and beyond.</p>
     <div class="hero-btns">
-      <a href="#contact" class="btn-primary">Get in touch <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      <a href="#projects" class="btn-secondary">See my work <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#projects" class="btn-primary">See my work <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#contact" class="btn-secondary">Get in touch <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
   <div class="scroll-hint"><div class="scroll-line"></div> Scroll</div>
 </div>
  
+<!-- ABOUT -->
 <section id="about">
   <div class="section-label">01 — Who I am</div>
   <h2 class="section-title">About Me</h2>
@@ -156,29 +200,77 @@ footer span{color:var(--accent)}
       <p>I'm self-directed in my learning, currently building foundational skills in <span>AWS, Python, AI/ML, and DevOps</span> — not through theory alone, but by building real things. My flagship project is <span>FRIDAY</span>, a personal AI assistant I'm developing from the ground up using free, cloud-based tools.</p>
       <p>I believe the best engineers aren't just technical — they think in systems, communicate clearly, and build with purpose. That's the standard I'm working toward.</p>
     </div>
-    <div class="about-stats">
-      <div class="stat-card"><div class="stat-label">Location</div><div class="stat-value">Harare, Zimbabwe 🌍</div></div>
-      <div class="stat-card"><div class="stat-label">Focus</div><div class="stat-value">Cloud · DevOps · AI/ML</div></div>
-      <div class="stat-card"><div class="stat-label">Current Build</div><div class="stat-value">FRIDAY — AI Assistant</div></div>
-      <div class="stat-card"><div class="stat-label">Learning Path</div><div class="stat-value">AWS · Python · DevOps</div></div>
-      <div class="stat-card"><div class="stat-label">Status</div><div class="stat-value">Open to opportunities</div></div>
+    <div class="about-right">
+      <div class="profile-photo">
+        <img src="20260329_225105.png" alt="Ranganayi Reggie Nyamadzawo">
+      </div>
+      <div class="about-stats">
+        <div class="stat-card"><div class="stat-label">Location</div><div class="stat-value">Harare, Zimbabwe 🌍</div></div>
+        <div class="stat-card"><div class="stat-label">Focus</div><div class="stat-value">Cloud · DevOps · AI/ML</div></div>
+        <div class="stat-card"><div class="stat-label">Current Build</div><div class="stat-value">FRIDAY — AI Assistant</div></div>
+        <div class="stat-card"><div class="stat-label">Status</div><div class="stat-value">Open to opportunities</div></div>
+      </div>
     </div>
   </div>
 </section>
  
+<!-- SKILLS -->
 <section id="skills">
   <div class="section-label">02 — What I'm building with</div>
   <h2 class="section-title">Skills</h2>
   <div class="skills-grid fade-in">
-    <div class="skill-item"><div class="skill-icon">☁️</div><div class="skill-name">Amazon Web Services</div><div class="skill-level">Learning</div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:30%"></div></div></div>
-    <div class="skill-item"><div class="skill-icon">🐍</div><div class="skill-name">Python</div><div class="skill-level">Learning</div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:25%"></div></div></div>
-    <div class="skill-item"><div class="skill-icon">🤖</div><div class="skill-name">AI / Machine Learning</div><div class="skill-level">Exploring</div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:20%"></div></div></div>
-    <div class="skill-item"><div class="skill-icon">⚙️</div><div class="skill-name">DevOps</div><div class="skill-level">Exploring</div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:15%"></div></div></div>
-    <div class="skill-item"><div class="skill-icon">🏗️</div><div class="skill-name">Solutions Architecture</div><div class="skill-level">Aspiring</div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:10%"></div></div></div>
-    <div class="skill-item"><div class="skill-icon">🧠</div><div class="skill-name">Systems Thinking</div><div class="skill-level">Developing</div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:35%"></div></div></div>
+    <div class="skill-item">
+      <div class="skill-icon">
+        <svg viewBox="0 0 24 24" fill="#FF9900"><path d="M13.527 11.815h-.2v.35h.2c.145 0 .22-.06.22-.175 0-.12-.075-.175-.22-.175zm1.254 1.06h.217v-.905h.2c.13 0 .196.06.196.177v.728h.218v-.75c0-.23-.13-.37-.355-.37h-.476v1.12zm-1.254-.28h-.2v.28h-.218v-1.12h.418c.26 0 .413.15.413.42 0 .25-.153.42-.413.42z"/><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1.05 14.5H9.73v-4.2H8.55V11.1h2.4v5.4zm2.85 0h-1.22V11.1h1.22v5.4zm3.05-3.9c0 .9-.45 1.35-1.35 1.35h-.5v2.55h-1.22V11.1h1.72c.9 0 1.35.45 1.35 1.35v1.15z"/></svg>
+      </div>
+      <div class="skill-name">Amazon Web Services</div>
+      <div class="skill-context">AWS AI Practitioner Challenge — certified May 2026</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:35%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-icon">
+        <svg viewBox="0 0 24 24" fill="#3776AB"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.26-.02h.35l.75.05.73.17.67.29.59.42.5.54.41.66.33.78.26.9.2 1.01.12 1.13.06 1.24-.04 1.33-.12 1.39-.22 1.41-.32 1.41-.43 1.38-.55 1.33-.65 1.25-.76 1.14-.85 1-.95.84-1.03.67-1.1.49-1.14.32L7 21.8l-1.06.1-.99.01H4.12l-.94-.09-.84-.2-.71-.34-.59-.47-.47-.62-.36-.78-.26-.95-.17-1.13-.07-1.32.05-1.5.18-1.67.33-1.82.48-1.95.63-2.06.77-2.14.91-2.2z"/></svg>
+      </div>
+      <div class="skill-name">Python</div>
+      <div class="skill-context">Learning fundamentals · building FRIDAY AI assistant</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:25%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-icon">
+        <svg viewBox="0 0 24 24" fill="#00B4FF"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-5h2v2h-2zm0-8h2v6h-2z"/></svg>
+      </div>
+      <div class="skill-name">AI / Machine Learning</div>
+      <div class="skill-context">AWS AI Practitioner certified · studying ML fundamentals</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:30%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-icon">
+        <svg viewBox="0 0 24 24" fill="#2496ED"><path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.186.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.186.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.186.186 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.185.186v1.887c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288z"/></svg>
+      </div>
+      <div class="skill-name">DevOps</div>
+      <div class="skill-context">Studying CI/CD, containers, infrastructure as code</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:15%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-icon">
+        <svg viewBox="0 0 24 24" fill="#00B4FF"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="skill-name">Solutions Architecture</div>
+      <div class="skill-context">Long-term focus · studying AWS architecture patterns</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:10%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-icon">
+        <svg viewBox="0 0 24 24" fill="#8892A4"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      </div>
+      <div class="skill-name">Systems Thinking</div>
+      <div class="skill-context">Applied through debate, leadership & strategic planning</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:40%"></div></div>
+    </div>
   </div>
 </section>
  
+<!-- PROJECTS -->
 <section id="projects">
   <div class="section-label">03 — What I'm building</div>
   <h2 class="section-title">Projects</h2>
@@ -187,51 +279,54 @@ footer span{color:var(--accent)}
       <span class="project-status status-active">Active Build</span>
       <div class="project-name">FRIDAY — AI Assistant</div>
       <div class="project-desc">A personal AI assistant inspired by Tony Stark's FRIDAY. Built using free online tools and cloud-based APIs — no heavy local infrastructure. Goal: a fully functional assistant that handles tasks, answers questions, and learns over time.</div>
-      <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">Cloud APIs</span><span class="stack-tag">AI/ML</span><span class="stack-tag">Free Tier</span></div>
+      <div class="project-footer">
+        <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">Cloud APIs</span><span class="stack-tag">AI/ML</span><span class="stack-tag">Free Tier</span></div>
+        <a href="https://github.com/Ranga-elite" target="_blank" class="project-link">View on GitHub → </a>
+      </div>
     </div>
     <div class="project-card">
       <span class="project-status status-planned">Coming Soon</span>
       <div class="project-name">Cloud Architecture Lab</div>
-      <div class="project-desc">A personal sandbox environment on AWS Free Tier to practice and document real cloud architecture patterns — VPCs, EC2, Lambda, S3, and IAM configurations built from scratch.</div>
-      <div class="project-stack"><span class="stack-tag">AWS</span><span class="stack-tag">Terraform</span><span class="stack-tag">DevOps</span><span class="stack-tag">IaC</span></div>
+      <div class="project-desc">A personal sandbox on AWS Free Tier to practice and document real cloud architecture patterns — VPCs, EC2, Lambda, S3, and IAM configurations built from scratch and documented publicly.</div>
+      <div class="project-footer">
+        <div class="project-stack"><span class="stack-tag">AWS</span><span class="stack-tag">Terraform</span><span class="stack-tag">DevOps</span><span class="stack-tag">IaC</span></div>
+      </div>
     </div>
     <div class="project-card">
-      <span class="project-status status-active">Shipped</span>
+      <span class="project-status status-shipped">Shipped</span>
       <div class="project-name">This Website</div>
-      <div class="project-desc">Built from scratch using pure HTML and CSS — no frameworks, no templates. Hosted on GitHub Pages for free. The first of many things I'll build and ship publicly.</div>
-      <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">GitHub Pages</span></div>
+      <div class="project-desc">Built from scratch using pure HTML and CSS — no frameworks, no templates. Hosted on GitHub Pages. The first of many things I'll build and ship publicly as I document the journey.</div>
+      <div class="project-footer">
+        <div class="project-stack"><span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">GitHub Pages</span></div>
+        <a href="https://github.com/Ranga-elite/Ranga-elite.github.io" target="_blank" class="project-link">View source →</a>
+      </div>
     </div>
   </div>
 </section>
  
+<!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="section-label">04 — Credentials</div>
   <h2 class="section-title">Certifications</h2>
-  <div class="certs-grid fade-in">
-    <div class="cert-card locked">
-      <div class="cert-icon">☁️</div>
-      <div class="cert-info"><div class="cert-name">AWS Certified Cloud Practitioner</div><div class="cert-issuer">Amazon Web Services</div></div>
-      <span class="cert-badge badge-target">Target</span>
+  <div class="fade-in">
+    <div class="cert-earned">
+      <div class="cert-earned-icon">🤖</div>
+      <div class="cert-earned-info">
+        <div class="cert-earned-name">AWS AI Practitioner Challenge</div>
+        <div class="cert-earned-issuer">Udacity · Part of Accenture · via AWS</div>
+        <div class="cert-earned-date">Awarded May 17, 2026</div>
+        <a href="https://www.udacity.com/certificate/e/d4f56610-318b-11f1-acc3-534c57468f61" target="_blank" class="cert-verify">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Verify certificate
+        </a>
+      </div>
+      <span class="cert-badge-earned">✓ Earned</span>
     </div>
-    <div class="cert-card locked">
-      <div class="cert-icon">🏗️</div>
-      <div class="cert-info"><div class="cert-name">AWS Solutions Architect Associate</div><div class="cert-issuer">Amazon Web Services</div></div>
-      <span class="cert-badge badge-target">Target</span>
-    </div>
-    <div class="cert-card locked">
-      <div class="cert-icon">⚙️</div>
-      <div class="cert-info"><div class="cert-name">AWS DevOps Engineer Professional</div><div class="cert-issuer">Amazon Web Services</div></div>
-      <span class="cert-badge badge-target">Target</span>
-    </div>
-    <div class="cert-card locked">
-      <div class="cert-icon">🤖</div>
-      <div class="cert-info"><div class="cert-name">AWS Certified AI Practitioner</div><div class="cert-issuer">Amazon Web Services</div></div>
-      <span class="cert-badge badge-target">Target</span>
-    </div>
+    <div class="cert-studying">Currently studying for AWS Certified Cloud Practitioner — the next milestone on the path to Solutions Architecture.</div>
   </div>
-  <p style="margin-top:24px;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px">Actively studying — certifications will be updated as earned.</p>
 </section>
  
+<!-- CONTACT -->
 <section id="contact">
   <div class="section-label">05 — Let's connect</div>
   <h2 class="section-title">Contact</h2>
@@ -239,9 +334,14 @@ footer span{color:var(--accent)}
     <div class="contact-intro">
       <p>I'm at the start of the journey — and I'm <span>open to connecting</span> with mentors, collaborators, and anyone building in cloud, DevOps, or AI.</p>
       <br>
-      <p>Whether you want to follow the build, offer guidance, or just say hello — reach out on any platform below.</p>
+      <p>Whether you want to follow the build, offer guidance, or just say hello — reach out directly via email or any platform below.</p>
     </div>
     <div class="contact-links">
+      <a href="mailto:nyamadzaworanganayir@gmail.com" class="contact-link">
+        <div class="contact-link-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div><span class="contact-link-label">Email</span><span class="contact-link-value">nyamadzaworanganayir@gmail.com</span></div>
+        <span class="contact-link-arrow">→</span>
+      </a>
       <a href="https://www.linkedin.com/in/ranganayi-nyamadzawo-5b5632399/" target="_blank" class="contact-link">
         <div class="contact-link-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></div>
         <div><span class="contact-link-label">LinkedIn</span><span class="contact-link-value">Ranganayi Nyamadzawo</span></div>
@@ -250,11 +350,6 @@ footer span{color:var(--accent)}
       <a href="https://www.instagram.com/ranga_elite/" target="_blank" class="contact-link">
         <div class="contact-link-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></div>
         <div><span class="contact-link-label">Instagram</span><span class="contact-link-value">@ranga_elite</span></div>
-        <span class="contact-link-arrow">→</span>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=61564150152035" target="_blank" class="contact-link">
-        <div class="contact-link-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></div>
-        <div><span class="contact-link-label">Facebook</span><span class="contact-link-value">Ranganayi Nyamadzawo</span></div>
         <span class="contact-link-arrow">→</span>
       </a>
       <a href="https://github.com/Ranga-elite" target="_blank" class="contact-link">
